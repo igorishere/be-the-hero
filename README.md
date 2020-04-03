@@ -13,7 +13,7 @@ Salve o arquivo e depois:
 - yarn start
 
 ### Rodando o *mobile* da aplicação ###
-No arquivo *\frontend\src\services\api.js* insira o endereço em que o servidor
+No arquivo *\mobile\src\services\api.js* insira o endereço em que o servidor
 do backend estiver rodando.
 Salve o arquivo e depois:
 - cd frontend
