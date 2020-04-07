@@ -69,14 +69,15 @@ module.exports ={
          * que deverá ser enviado via route params
          */
         const {id} = req.params; 
-        console.log('here');
+
+        
         /**Pegamos tbm o ID da ong logada */
         const ong_id =  req.headers.authorization;
 
         /**Pegamos o ong_id que está salvo na tabela de causas*/
         const incident = await knexConnection('incidents')
-        .where('id', id)
         .select('ong_id')
+        .where('id', id)
         .first();
 
         /**  Se o ID logado for diferente do ID contido em
